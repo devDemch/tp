@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">tp</string>
+    <string name="title_exercises">Упражнения</string>
+    <string name="title_plans">Планы</string>
+    <string name="title_journal">Журнал</string>
+    <string name="workout_list_description">Список тренировок</string>
+    <string name="weight">Вес (кг)</string>
+    <string name="repeat">Повторения</string>
+    <string name="approach">Повторения</string>
+    <string name="add_ex">Добавить упражнение</string>
+    <string name="name_workout">Название тренировки</string>
+    <string name="save_workout">Сохранить тренировку</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_exercises">
+
+    <fragment
+        android:id="@+id/navigation_exercises"
+        android:name="com.hfad.tp.ui.exercises.ExercisesFragment"
+        android:label="Упражнения"
+        tools:layout="@layout/fragment_exercises">
+        <action
+            android:id="@+id/action_exercises_to_exerciseList"
+            app:destination="@id/exerciseListFragment">
+        <argument
+            android:name="muscleGroupName"
+            app:argType="string"
+            app:nullable="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_plans"
+        android:name="com.hfad.tp.ui.plans.PlansFragment"
+        android:label="Планы"
+        tools:layout="@layout/fragment_plans" />
+
+    <fragment
+        android:id="@+id/navigation_journal"
+        android:name="com.hfad.tp.ui.journal.JournalFragment"
+        android:label="Журнал"
+        tools:layout="@layout/fragment_journal" />
+
+    <fragment
+        android:id="@+id/exerciseListFragment"
+        android:name="com.hfad.tp.ui.exercise_list.ExerciseListFragment"
+        android:label="{muscleGroupName}"
+        tools:layout="@layout/fragment_exercise_list">
+        <argument
+            android:name="muscleGroupName"
+            app:argType="string"
+            android:defaultValue="Армрестлинг" />
+    </fragment>
+</navigation>

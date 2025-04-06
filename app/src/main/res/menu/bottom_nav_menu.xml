@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_exercises"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="Упражнения" />
+
+    <item
+        android:id="@+id/navigation_plans"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="Планы" />
+
+    <item
+        android:id="@+id/navigation_journal"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Журнал" />
+
+</menu>
